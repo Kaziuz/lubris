@@ -44,7 +44,7 @@
         height:100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(../img/escritorio/fondoContacto.jpg);*/
+        background-image: url(../img/escritorio/fondoContacto.jpg);
     }
 
     .menu{
@@ -126,7 +126,7 @@
     margin-left: 27%;
     position: relative;
     top: -195px;
-    background-image:url(../img/escritorio/botoninformacion.png);
+    background-image:url(../img/escritorio/botonInformacion.png);
     background-size: contain;
     background-color: transparent;
     
