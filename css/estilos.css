@@ -1,0 +1,981 @@
+@font-face {
+    font-family: logo;
+    src: url(../tipo/Novecento-Bold.otf);   
+}
+
+@font-face {
+    font-family: menu;
+    src: url(../tipo/Novecento-Book.otf);   
+}
+
+@font-face {
+    font-family: textos;
+    src: url(../tipo/nose.otf);   
+}
+
+/* Dispositivos grandes (1200px y superiores)*/
+@media screen and (min-width: 1200px) and (max-width:2900px) {
+    @keyframes  moverMenu
+    {
+        0%  { margin-left: 522%; }
+        100%{ margin-left: 222%; }
+    }
+        
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;   
+        position: fixed;    
+    }
+
+    #titulo{
+        width: 100%;
+        height: 20vh;
+        background-color: white;
+    }
+
+    #titulo h1{
+        font-family: logo;
+        font-style: italic;
+        padding: 0px;
+        margin: -15px 0px 0px 0px;
+        font-size: 8em;
+        color:rgb(17, 92, 191);
+        text-align: center;
+        position: relative;
+        top: 532px;
+        text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.8);
+    }
+    
+    #contenedor{
+        width: 100%;
+        height: auto;
+        background-image: url("../img/escritorio/indexFondoFinal.jpg");
+        background-size:cover;
+        z-index: 10;
+        
+    }
+
+    .menu{
+        width: 100%;
+        height: 82vh;
+    }
+
+    .menu ol{
+        width: 100%;
+        height: 80vh;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .menuList{
+        display: inline-block;
+        border-right: 1px solid white;
+        height: 82vh;
+        width: 25%;
+        float: left;
+        position: relative;
+        z-index: 30;
+    }
+    
+    .menuList a{
+        text-decoration: none;
+    }
+    
+    /* Inicia navegador*/
+
+    .imagenContenedor{
+        width: 80px;
+        height: 80px; 
+        position: relative;
+        top:-43px;
+        
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);    
+        transform: rotate(45deg);
+    }
+    
+    .backgroundFondo{
+        width: 80px;
+        height: 80px;
+        margin-left: 28%;
+        position: relative;
+        top: -108px;
+        background-color: rgb(5, 80, 249);
+        display: inline-block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7); 
+       }
+    
+    #imagenBtnHome{
+        width: 80px;
+        height: 80px;
+        margin-left: 26%;
+        position: relative;
+        top: -195px;
+        background-image:url(../img/escritorio/botonHome.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    #imagenBtnHome:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+                
+    #imagenBtninfo{
+        width: 80px;
+        height: 80px;
+        margin-left: 27%;
+        position: relative;
+        top: -195px;
+        background-image:url(../img/escritorio/botoninformacion.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    #imagenBtninfo:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+
+    #imagenBtnBlog{
+        width: 80px;
+        height: 80px;
+        margin-left: 27%;
+        position: relative;
+        top: -195px;
+        background-image:url(../img/escritorio/botonBlog.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+        
+    #imagenBtnBlog:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }    
+    
+    #imagenBtnContacto{
+        width: 80px;
+        height: 80px;
+        margin-left: 27%;
+        position: relative;
+        top: -195px;
+        background-image:url(../img/escritorio/botonContacto.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+        
+    
+    #imagenBtnContacto:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    .imagenContenedor h2{
+        width: 49%;
+        font-family: logo;
+        color: rgb(5, 80, 249);
+        font-size: 1.5em;
+        margin-left: 222%;
+        position: relative;
+        top: -247px;
+        left: -82%;
+        text-decoration: none;
+        
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+        opacity:0;
+    }
+    
+    /* Termina navegador*/
+
+    
+    ol li:nth-child(2){
+        border-right: 1px solid white;
+        height: 22vh;
+    }
+
+    ol li:nth-child(2)::after{
+        position: relative;
+        right: -82%;
+        top: 185px;    
+        content: url(../img/escritorio/LOGO.png);
+    }
+    
+
+}
+
+
+/* computadores de escritorio y portatiles*/
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    @keyframes  moverMenu{
+        0%  { margin-left: 522%; }
+        100%{ margin-left: 222%; }
+        }
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        position: fixed;
+    }
+
+    #titulo{
+        width: 100%;
+        height: 20vh;
+        background-color: white;
+    }
+
+    #titulo h1{
+        font-family: logo;
+        font-style: italic;
+        padding: 0px;
+        margin: -15px 0px 0px 0px;
+        font-size: 8em;
+        color:rgb(17, 92, 191);
+        text-align: center;
+        position: relative;
+        top: 556px;
+        text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    #contenedor{
+        width: 100%;
+        height: auto;
+        background-image: url("../img/escritorio/indexFondoFinal.jpg");
+        background-size:cover;
+        z-index: 10;
+    }
+
+    .menu{
+        width: 100%;
+        height: 82vh;
+    }
+
+    .menu ol{
+        width: 100%;
+        height: 80vh;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .menuList{
+        display: inline-block;
+        border-right: 1px solid white;
+        height: 82vh;
+        width: 25%;
+        float:left;
+    }
+    
+    .menuList a{
+        text-decoration: none;
+    }
+    
+    /* Inicia navegador*/
+
+    
+    .imagenContenedor{
+        width: 80px;
+        height: 80px; 
+        position: relative;
+        top:-41px;
+        
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+    }
+    
+    .backgroundFondo{
+        width: 80px;
+        height: 80px;
+        margin-left: 28%;
+        position: relative;
+        top: -108px;
+        background-color: rgb(5, 80, 249);
+        display: inline-block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7);
+    }
+    
+    #imagenBtnHome{
+        width: 80px;
+        height: 80px;
+        margin-left: 25%;
+        position: relative;
+        top: -196px;
+        background-image:url(../img/escritorio/botonHome.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnHome:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    #imagenBtninfo{
+        width: 80px;
+        height: 80px;
+        margin-left: 28%;
+        position: relative;
+        top: -196px;
+        background-image:url(../img/escritorio/botoninformacion.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtninfo:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+        
+    #imagenBtnBlog{
+        width: 80px;
+        height: 80px;
+        margin-left: 28%;
+        position: relative;
+        top: -196px;
+        background-image:url(../img/escritorio/botonBlog.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnBlog:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    #imagenBtnContacto{
+        width: 80px;
+        height: 80px;
+        margin-left: 28%;
+        position: relative;
+        top: -196px;
+        background-image:url(../img/escritorio/botonContacto.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnContacto:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }  
+    
+    .imagenContenedor h2{
+        width: 49%;
+        font-family: logo;
+        color: rgb(5, 80, 249);
+        font-size: 1.5em;
+        margin-left: 222%;
+        position: relative;
+        top: -248px;
+        left: -78%;
+        text-decoration: none;
+        
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+        opacity:0;
+    }
+
+    /* Termina navegador*/
+    
+    
+    ol li:nth-child(2){
+        border-right: 1px solid white;
+        height: 22vh;
+    }
+
+    ol li:nth-child(2)::after{
+        position: relative;
+        right: -80%;
+        top: 195px;   
+        content: url(../img/escritorio/LOGO.png);
+    }  
+    
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    @keyframes  moverMenu
+    {
+        0%  { margin-left: 522%; }
+        100%{ margin-left: 222%; }
+    }
+        
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        position: fixed;
+    }
+
+    #titulo{
+        width: 100%;
+        height: 20vh;
+        background-color: white;
+    }
+
+    #titulo h1{
+        font-family: logo;
+        font-style: italic;
+        padding: 0px;
+        margin: -15px 0px 0px 0px;
+        font-size: 8em;
+        color:rgb(17, 92, 191);
+        text-align: center;
+        text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.8);
+    }
+    
+    
+    #contenedor{
+        width: 100%;
+        height: auto;
+        background-image: url("../img/tablet/fondoTablet.jpg");
+        background-size:cover;
+        z-index: 10;
+    }
+
+    .menu{
+        width: 100%;
+        height: 82vh;
+    }
+
+    .menu ol{
+        width: 100%;
+        height: 82vh;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .menuList{
+        display: inline-block;
+        height: 29vh;
+        width: 50%;
+        float:left;
+    }
+    
+    .menuList a{
+        text-decoration: none;
+    }
+    
+    .menuList:nth-child(1)
+    {
+        
+        border-right: 1px solid white;
+    }
+    
+    /* Inicia navegador*/
+        
+    .imagenContenedor{
+        width: 80px;
+        height: 80px; 
+        position: relative;
+        top:11px;
+        left:20%;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+    }
+    
+    .backgroundFondo{
+        width: 80px;
+        height: 80px;
+        margin-left: 28%;
+        position: relative;
+        top: -108px;
+        background-color: rgb(5, 80, 249);
+        display: inline-block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7);
+    }
+    
+    #imagenBtnHome{
+        width: 80px;
+        height: 80px;
+        margin-left: 25%;
+        position: relative;
+        top: -196px;
+        background-image:url(../img/escritorio/botonHome.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    #imagenBtnHome:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    #linkHome{
+        position: relative;
+        top:162px;
+        
+    }
+        
+    #imagenBtninfo{
+        width: 80px;
+        height: 80px;
+        margin-left: 25%;
+        position: relative;
+        top: -198px;
+        background-image:url(../img/escritorio/botoninformacion.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtninfo:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    #linkinfo{
+        position: relative;
+        top:160px;
+    }
+    
+    #linkBlog{
+        position: absolute;
+        top: 46%;
+        right: 33%;
+    }
+        
+    #imagenBtnBlog{
+        width: 80px;
+        height: 80px;
+        margin-left: 29%;
+        position: relative;
+        top: -194px;
+        background-image:url(../img/escritorio/botonBlog.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnBlog:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+
+    #imagenBtnContacto{
+        width: 80px;
+        height: 80px;
+        margin-left: 25%;
+        position: relative;
+        top: -196px;
+        background-image:url(../img/escritorio/botonContacto.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnContacto:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    #linkContacto{
+        position: relative;
+        top:112px;
+    }
+
+    ol li:nth-child(4) figure{
+        margin-top: -68px;
+    }
+        
+    ol li:nth-child(3) figure{
+        margin-top: 215px;
+    }
+
+    ol li:nth-child(2){
+        border-right: 1px solid white;
+        height: 22vh;
+    }
+
+    ol li:nth-child(2)::after{
+        position: relative;
+        right: 12%;
+        top: 416px;    
+        content: url(../img/escritorio/LOGO.png);
+    }
+    
+    .imagenContenedor h2{
+        width: 49%;
+        font-family: logo;
+        color: rgb(5, 80, 249);
+        font-size: 1.5em;
+        margin-left: 222%;
+        position: relative;
+        top: -248px;
+        left: -78%;
+        text-decoration: none;
+        
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+        opacity:0;
+    }
+}
+
+/* celulares */
+@media screen and (max-width: 768px)
+{
+    @keyframes  moverMenu{
+        0%  { margin-left: 522%; }
+        100%{ margin-left: 222%; }
+        }
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        position: fixed;
+    }
+
+    #titulo{
+        width: 100%;
+        height: 15vh;
+        background-color: white;
+    }
+
+    #titulo h1{
+        font-family: logo;
+        font-style: italic;
+        padding: 10px;
+        margin: 0px 0px 0px 0px;
+        font-size: 5em;
+        color:rgb(17, 92, 191);
+        text-align: center;
+        text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    #contenedor{
+        width: 100%;
+        height: 85vh;
+        background-image: url("../img/celular/homeFondo.jpg");
+        background-size:cover;
+        z-index: 10;
+    }
+
+    .menu{
+        width: 100%;
+        height: 17vh;
+        position: relative;
+        top: 7vh;
+    }
+
+    .menu ol{
+        width: 100%;
+        height: 30vh;
+        list-style: none;
+        box-sizing: border-box;
+        position: relative;
+        top:22px;
+    }
+
+    .menuList{
+        display: block;
+        height: 120px;
+        width: 100%;
+    }
+    
+    .menuList a{
+        text-decoration: none;
+    }
+
+    /* Inicia navegador*/
+
+    .imagenContenedor{
+        width: 80px;
+        height: 80px; 
+        position: relative;
+        top:96px;
+        left:29%;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+    }
+    
+    .backgroundFondo{
+        width: 80px;
+        height: 80px;
+        margin-left: 28%;
+        position: relative;
+        top: -108px;
+        background-color: rgb(5, 80, 249);
+        display: inline-block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7);  
+     }
+    
+    #imagenBtnHome{
+        width: 80px;
+        height: 80px;
+        margin-left: 25%;
+        position: relative;
+        top: -194px;
+        background-image:url(../img/escritorio/botonHome.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnHome:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    #imagenBtninfo{
+        width: 80px;
+        height: 80px;
+        margin-left: 29%;
+        position: relative;
+        top: -194px;
+        background-image:url(../img/escritorio/botoninformacion.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtninfo:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    #imagenBtnBlog{
+        width: 80px;
+        height: 80px;
+        margin-left: 29%;
+        position: relative;
+        top: -192px;
+        background-image:url(../img/escritorio/botonBlog.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnBlog:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+
+    #imagenBtnContacto{
+        width: 80px;
+        height: 80px;
+        margin-left: 29%;
+        position: relative;
+        top: -193px;
+        background-image:url(../img/escritorio/botonContacto.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    
+    }
+        
+    #imagenBtnContacto:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+
+    #simbolo{
+        display: none;
+    }
+    
+    .imagenContenedor h2{
+        width: 49%;
+        font-family: logo;
+        color: rgb(5, 80, 249);
+        font-size: 1.5em;
+        margin-left: 222%;
+        position: relative;
+        top: -248px;
+        left: -78%;
+        text-decoration: none;
+        
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+        opacity:0;
+    }
+
+    /* Termina navegador*/
+    
+}
+
+
+
+

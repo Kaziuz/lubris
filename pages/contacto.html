@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosContacto.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="../librerias/jquery.js">
+    </script>
+    <script type="text/javascript" src="../scripts/main.js">
+    </script>
+    <title> Información </title>
+</head>
+<body>
+    <div id="container">
+        <div id="fondo">
+            
+            <nav class="menu">
+                <ol>
+                    <li class="menuList">
+                        <a id="linkHome" href="../index.html">
+                            <figure class="imagenContenedor">
+                                <div class="backgroundFondo"></div>
+                                <div class="imagenBtnHome"></div>  
+                                <h2> Index </h2>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a id="linkinfo" href="info.html">
+                            <figure class="imagenContenedor">
+                                <div class="backgroundFondo"></div> 
+                                <div class="imagenBtninfo"></div>    
+                                <h2> Información </h2>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a id="linkBlog" href="blog.html">
+                            <figure class="imagenContenedor">
+                                <div class="backgroundFondo"></div> 
+                                <div class="imagenBtnBlog"></div> 
+                                <h2>Blog</h2>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="menuList">
+                        <a id="linkContacto" href="contacto.html">
+                            <figure class="imagenContenedor">
+                                <div class="backgroundFondo"></div>
+                                <div class="imagenBtnContacto"></div> 
+                                <h2>Contacto</h2>
+                            </figure>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+            
+            <div id="contenedorFormulario">
+                <div id="imagenFondo">
+                    <img id="techo" src="../img/escritorio/techo1.png">
+                </div>
+                <form id="formulario" action="envioMensaje.php" method="post" enctype="multipart/form-data">
+                    
+                    <article class="mensaje">
+                        <label for="mensaje">Escribanos</label>
+                        <textarea type="text" name="comentario" placeholder="escriba su mensaje" rows="8" cols="40" required></textarea>
+                    </article>
+                    
+                    <article class="nombre">
+                        <label for="nombre"></label>
+                        <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                    </article>
+                    
+                    <article class="ciudad">
+                        <label for="ciudad"></label>
+                        <input type="text" name="ciudad" placeholder="Escriba su ciudad" required>
+                    </article>
+                        
+                    
+                    <article class="correo">
+                        <label for="correo"></label>
+                        <input type="email" name="correo" placeholder="sucorreo@gmail.com" required>  
+                    </article>
+                        
+                    <article class="botton">
+                        <button type="submit" value="enviar" name="guardar">Enviar</button>
+                    </article>
+                </form>
+            </div>
+        </div>        
+    </div>
+</body>
+
+<script type="text/javascript">
+    $("#formulario button").click((e)=>{     
+        
+        // trim limpia los espacios
+        // validamos los datos desde el cliente   
+        var mensaje = $("#formulario textarea").val().trim();
+        
+        if(!mensaje)
+        {
+            alert("Mensaje esta vacio");
+            return;    
+        }
+        
+        var nombre = $("#formulario .nombre input").val().trim();
+        if(!nombre)
+        {
+            alert("Nombre vacio: Escriba su nombre")
+            return;
+        }
+        
+        var ciudad = $("#formulario .ciudad input").val().trim();
+        if(!ciudad)
+        {
+            alert("Ciudad vacia: Escriba su ciudad")
+            return;
+        }
+        
+        var correo = $("#formulario .correo input").val().trim();
+        
+        if(!correo)
+        {
+            alert("Correo esta vacio");
+            return;  
+        }
+        
+        // una expresión regular para saber si el dato
+        // ingresado si es un correo
+        var regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        
+        if( !correo.match(regex) )
+        {
+            alert("no es un correo valido");
+        }
+        
+    }); 
+</script>
+</html>
