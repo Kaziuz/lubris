@@ -36,7 +36,7 @@
     #titulo{
         width: 100%;
         height: 20vh;
-        background-color: tomato;
+        background-color: white;
     }
 
     #titulo h1{
@@ -268,7 +268,7 @@
     #titulo{
         width: 100%;
         height: 20vh;
-        background-color: yellow;
+        background-color: white;
     }
 
     #titulo h1{
@@ -503,8 +503,8 @@
 
     #titulo{
         width: 100%;
-        height: 20vh;
-        background-color: red;
+        height: 13vh;
+        background-color: white;
     }
 
     #titulo h1{
@@ -512,7 +512,7 @@
         font-style: italic;
         padding: 0px;
         margin: -15px 0px 0px 0px;
-        font-size: 8em;
+        font-size: 10em;
         color:rgb(17, 92, 191);
         text-align: center;
         text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.8);
@@ -521,7 +521,7 @@
     
     #contenedor{
         width: 100%;
-        height: auto;
+        height: 88vh;
         background-image: url("../img/tablet/fondoTablet.jpg");
         background-size:cover;
         z-index: 10;
@@ -541,7 +541,7 @@
 
     .menuList{
         display: inline-block;
-        height: 29vh;
+        height: 24vh;
         width: 50%;
         float:left;
     }
@@ -573,22 +573,22 @@
     }
     
     .backgroundFondo{
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         margin-left: 28%;
         position: relative;
-        top: -108px;
+        top: -110px;
         background-color: rgb(5, 80, 249);
         display: inline-block;
         box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7);
     }
     
     #imagenBtnHome{
-        width: 80px;
-        height: 80px;
-        margin-left: 25%;
+        width: 130px;
+        height: 130px;
+        margin-left: 14%;
         position: relative;
-        top: -196px;
+        top: -243px;
         background-image:url(../img/escritorio/botonHome.png);
         background-size: contain;
         background-color: transparent;
@@ -614,11 +614,11 @@
     }
         
     #imagenBtninfo{
-        width: 80px;
-        height: 80px;
-        margin-left: 25%;
+        width: 130px;
+        height: 130px;
+        margin-left: 18%;
         position: relative;
-        top: -198px;
+        top: -245px;
         background-image:url(../img/escritorio/botoninformacion.png);
         background-size: contain;
         background-color: transparent;
@@ -650,11 +650,11 @@
     }
         
     #imagenBtnBlog{
-        width: 80px;
-        height: 80px;
-        margin-left: 29%;
+        width: 130px;
+        height: 130px;
+        margin-left: 16%;
         position: relative;
-        top: -194px;
+        top: -244px;
         background-image:url(../img/escritorio/botonBlog.png);
         background-size: contain;
         background-color: transparent;
@@ -675,11 +675,11 @@
     }
 
     #imagenBtnContacto{
-        width: 80px;
-        height: 80px;
-        margin-left: 25%;
+        width: 130px;
+        height: 130px;
+        margin-left: 17%;
         position: relative;
-        top: -196px;
+        top: -243px;
         background-image:url(../img/escritorio/botonContacto.png);
         background-size: contain;
         background-color: transparent;
@@ -728,11 +728,11 @@
         width: 49%;
         font-family: logo;
         color: rgb(5, 80, 249);
-        font-size: 1.5em;
+        font-size: 2em;
         margin-left: 222%;
         position: relative;
-        top: -248px;
-        left: -78%;
+        top: -324px;
+        left: -31%;
         text-decoration: none;
         
         -webkit-transform: rotate(0deg);
@@ -759,30 +759,31 @@
 
     #container{
         width: 100%;
-        height: 100vh;
+        height: 103vh;
         box-sizing: border-box;
     }
 
     #titulo{
         width: 100%;
-        height: 15vh;
-        background-color: green;
+        height: 18vh;
+        background-color: white;
     }
 
     #titulo h1{
         font-family: logo;
         font-style: italic;
         padding: 10px;
-        margin-left: -16%;
-        font-size: 5em;
+        font-size: 4.5em;
         color:rgb(17, 92, 191);
         text-align: center;
         text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.8);
+        position: relative;
+        top:2vh;
     }
 
     #contenedor{
         width: 100%;
-        height: 85vh;
+        height: 134vh;
         background-image: url("../img/celular/homeFondo.jpg");
         background-size:cover;
         z-index: 10;
@@ -790,10 +791,20 @@
 
     .menu{
         width: 100%;
-        height: 17vh;
+        height: auto;
         position: relative;
-        top: 7vh;
-        right: 7%;
+        top: 2vh;
+        margin-left: -3%;
+    }
+
+    /* SIMBOLO !!! */
+    .menu::after{
+        position: relative;
+        right: -40%;
+        top: 74vh;
+        content: url(../img/escritorio/LOGO.png);
+        width: 12px;
+        height: 12px;
     }
 
     .menu ol{
@@ -802,15 +813,14 @@
         list-style: none;
         box-sizing: border-box;
         position: relative;
-        top:22px;
     }
 
     .menuList{
         display: block;
-        height: 120px;
+        height: 23vh;
         width: 100%;
     }
-    
+
     .menuList a{
         text-decoration: none;
     }
@@ -818,36 +828,35 @@
     /* Inicia navegador*/
 
     .imagenContenedor{
-        width: 80px;
-        height: 80px; 
+        width: 40px;
+        height: 40px; 
         position: relative;
-        top:96px;
+        top:20vh;
         left:29%;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
-        
     }
-    
+        
     .backgroundFondo{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         margin-left: 28%;
         position: relative;
         top: -108px;
         background-color: rgb(5, 80, 249);
-        display: inline-block;
-        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7);  
+        display: block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7); 
      }
-    
+
     #imagenBtnHome{
-        width: 80px;
-        height: 80px;
-        margin-left: 25%;
+        width: 100px;
+        height: 100px;
+        margin-left: 9%;
         position: relative;
-        top: -194px;
+        top: -205px;
         background-image:url(../img/escritorio/botonHome.png);
         background-size: contain;
         background-color: transparent;
@@ -857,7 +866,7 @@
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
-    
+
     }
         
     #imagenBtnHome:hover ~ h2{
@@ -866,14 +875,14 @@
         animation-iteration-count: 1;
         opacity: 1;
     }
-    
+
     #imagenBtninfo{
-        width: 80px;
-        height: 80px;
-        margin-left: 29%;
+        width: 100px;
+        height: 100px;
+        margin-left: 13%;
         position: relative;
-        top: -194px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        top: -205px;
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -882,7 +891,7 @@
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
-    
+
     }
         
     #imagenBtninfo:hover ~ h2{
@@ -891,13 +900,13 @@
         animation-iteration-count: 1;
         opacity: 1;
     }
-    
+
     #imagenBtnBlog{
-        width: 80px;
-        height: 80px;
-        margin-left: 29%;
+        width: 100px;
+        height: 100px;
+        margin-left: 5%;
         position: relative;
-        top: -192px;
+        top: -206px;
         background-image:url(../img/escritorio/botonBlog.png);
         background-size: contain;
         background-color: transparent;
@@ -907,7 +916,7 @@
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
-    
+
     }
         
     #imagenBtnBlog:hover ~ h2{
@@ -918,11 +927,11 @@
     }
 
     #imagenBtnContacto{
-        width: 80px;
-        height: 80px;
-        margin-left: 29%;
+        width: 100px;
+        height: 100px;
+        margin-left: 11%;
         position: relative;
-        top: -193px;
+        top: -204px;
         background-image:url(../img/escritorio/botonContacto.png);
         background-size: contain;
         background-color: transparent;
@@ -932,7 +941,7 @@
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
-    
+
     }
         
     #imagenBtnContacto:hover ~ h2{
@@ -943,19 +952,20 @@
     }
 
     #simbolo{
-        display: none;
+        /*display: none;*/
     }
-    
+
     .imagenContenedor h2{
         width: 49%;
         font-family: logo;
-        color: rgb(5, 80, 249);
+        color: white;
         font-size: 1.5em;
-        margin-left: 222%;
+        margin-left: 300%;
         position: relative;
-        top: -248px;
-        left: -78%;
+        top: -268px;
+        left: -25%;
         text-decoration: none;
+        letter-spacing: 1.5px;
         
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -967,7 +977,6 @@
     }
 
     /* Termina navegador*/
-    
 }
 
 /* celulares pequeños;*/
