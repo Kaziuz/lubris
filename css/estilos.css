@@ -244,8 +244,6 @@
         top: 185px;    
         content: url(../img/escritorio/LOGO.png);
     }
-    
-
 }
 
 
@@ -987,21 +985,21 @@
 
     #container{
         width: 100%;
-        height: 100vh;
+        height: 103vh;
         box-sizing: border-box;
     }
 
     #titulo{
         width: 100%;
-        height: 17vh;
-        background-color: orange;
+        height: 21vh;
+        background-color: white;
     }
 
     #titulo h1{
         font-family: logo;
         font-style: italic;
         padding: 10px;
-        font-size: 3em;
+        font-size: 3.5em;
         color:rgb(17, 92, 191);
         text-align: center;
         text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.8);
@@ -1011,7 +1009,7 @@
 
     #contenedor{
         width: 100%;
-        height: 85vh;
+        height: 157vh;
         background-image: url("../img/celular/homeFondo.jpg");
         background-size:cover;
         z-index: 10;
@@ -1019,9 +1017,20 @@
 
     .menu{
         width: 100%;
-        height: 17vh;
+        height: auto;
         position: relative;
-        top: 7vh;
+        top: 8vh;
+        margin-left: -10%;
+    }
+    
+    /* SIMBOLO !!! */
+    .menu::after{
+        position: relative;
+        right: -44%;
+        top: 84vh;
+        content: url(../img/escritorio/LOGO.png);
+        width: 12px;
+        height: 12px;
     }
 
     .menu ol{
@@ -1030,13 +1039,11 @@
         list-style: none;
         box-sizing: border-box;
         position: relative;
-        top:-5vh;
-        left:-9%;
     }
 
     .menuList{
         display: block;
-        height: 20vh;
+        height: 27vh;
         width: 100%;
     }
     
@@ -1057,26 +1064,25 @@
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
-        
     }
-    
+        
     .backgroundFondo{
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         margin-left: 28%;
         position: relative;
         top: -108px;
         background-color: rgb(5, 80, 249);
-        display: inline-block;
-        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7);  
+        display: block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7); 
      }
     
     #imagenBtnHome{
-        width: 50px;
-        height: 50px;
-        margin-left: 15%;
+        width: 70px;
+        height: 70px;
+        margin-left: 9%;
         position: relative;
-        top: -158px;
+        top: -175px;
         background-image:url(../img/escritorio/botonHome.png);
         background-size: contain;
         background-color: transparent;
@@ -1097,11 +1103,11 @@
     }
     
     #imagenBtninfo{
-        width: 50px;
-        height: 50px;
-        margin-left: 16%;
+        width: 70px;
+        height: 70px;
+        margin-left: 13%;
         position: relative;
-        top: -160px;
+        top: -175px;
         background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
@@ -1122,11 +1128,11 @@
     }
     
     #imagenBtnBlog{
-        width: 50px;
-        height: 50px;
-        margin-left: 15%;
+        width: 70px;
+        height: 70px;
+        margin-left: 11%;
         position: relative;
-        top: -158px;
+        top: -175px;
         background-image:url(../img/escritorio/botonBlog.png);
         background-size: contain;
         background-color: transparent;
@@ -1147,11 +1153,11 @@
     }
 
     #imagenBtnContacto{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         margin-left: 11%;
         position: relative;
-        top: -159px;
+        top: -174px;
         background-image:url(../img/escritorio/botonContacto.png);
         background-size: contain;
         background-color: transparent;
@@ -1172,7 +1178,7 @@
     }
 
     #simbolo{
-        display: none;
+        /*display: none;*/
     }
     
     .imagenContenedor h2{
@@ -1182,8 +1188,8 @@
         font-size: 0.9em;
         margin-left: 222%;
         position: relative;
-        top: -193px;
-        left: -78%;
+        top: -219px;
+        left: -25%;
         text-decoration: none;
         letter-spacing: 1.5px;
         
