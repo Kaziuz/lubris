@@ -980,7 +980,7 @@
 }
 
 /* celulares pequeños;*/
-@media screen and (max-width: 366px)
+@media screen and (max-width: 365px)
 {
     @keyframes  moverMenu{
         0%  { margin-left: 522%; }
