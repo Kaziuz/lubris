@@ -18,8 +18,8 @@
     src: url(../tipo/Novecento-CondLight.otf);   
 }
 
-@media screen and (min-width: 1200px) and (max-width:2900px)
-{
+/* Dispositivos grandes (1200px y superiores)*/
+@media screen and (min-width: 1200px) {
     @keyframes  moverMenu{
         0%  { margin-left: 522%; }
         100%{ margin-left: 222%; }
@@ -497,7 +497,8 @@
     
 }
 
-@media screen and (min-width: 992px) and (max-width:1200px)
+/* computadores de escritorio y portatiles*/
+@media screen and (min-width: 992px) and (max-width:1199px)
 {
     @keyframes  moverMenu
     {
@@ -603,7 +604,7 @@
         margin-left: 27%;
         position: relative;
         top: -195px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -936,7 +937,8 @@
 
 }
 
-@media screen and (min-width:768px) and (max-width:992px)
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width:768px) and (max-width:991px)
 {
     @keyframes  moverMenu
     {
@@ -1045,7 +1047,7 @@
         margin-left: 18%;
         position: relative;
         top: -126px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -1373,7 +1375,8 @@
     
 }
 
-@media screen and (max-width: 768px)
+/* celulares Grandes*/
+@media screen and (min-width: 366px) and (max-width:767px)
 {
     @keyframes  moverMenu
     {
@@ -1395,7 +1398,7 @@
 
     header{
         width:100%;
-        height:18vh;
+        height:15vh;
         display: block;
     }
 
@@ -1485,7 +1488,7 @@
         position: relative;
         top: -96px;
         background-repeat: no-repeat;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -1625,7 +1628,7 @@
 
 .textoContenido{
     width: 95.5%;
-    height: 45vh;
+    height: 50vh;
     display: block;
     padding: 2%;
 }
@@ -1813,6 +1816,451 @@
         letter-spacing: 1px;
         position: relative;
         top: 1vh;
+    } 
+}
+
+@media screen and (max-width: 365px)
+{
+    @keyframes  moverMenu
+    {
+        0%  { margin-left: 522%; }
+        100%{ margin-left: 222%; }
+    }
+        
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #container{
+        width: 100%;
+        height: 100%;  
+        background-color: white; 
+    
+    }
+
+    header{
+        width:100%;
+        height:30vh;
+        display: block;
+    }
+
+    .menu{
+        width: 100%;
+        height: 25vh;
+    }
+
+
+    .menu ol{
+        width: 100%;
+        height: 23vh;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .menuList{
+        display: inline-block;
+        height: 20vh;
+        width: 21%;
+        position:relative;
+        right:0%;
+    }
+    
+    .menuList a{
+        text-decoration: none;
+    }
+    
+    /* Inicia navegador*/
+    
+    .imagenContenedor{
+        width: 40px;
+        height: 40px; 
+        position: relative;
+        top:50px;
+        
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        right:-6%;
+    }
+    
+    .backgroundFondo{
+        width: 50px;
+        height: 50px;
+        margin-left: 13%;
+        position: relative;
+        top: -38px;
+        background-color: rgb(5, 80, 249);
+        display: inline-block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7);
+    }
+    
+    .imagenBtnHome{
+        width: 50px;
+        height: 50px;
+        margin-left: 8%;
+        position: relative;
+        top: -95px;
+        
+        background-image:url(../img/escritorio/botonHome.png);
+        background-repeat: no-repeat;
+
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    .imagenBtnHome:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    .imagenBtninfo{
+        width: 50px;
+        height: 50px;
+        margin-left: 8%;
+        position: relative;
+        top: -96px;
+        background-repeat: no-repeat;
+        background-image:url(../img/escritorio/botonInformacion.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+        
+    .imagenBtninfo:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    .imagenBtnBlog{
+        width: 50px;
+        height: 50px;
+        margin-left: 13%;
+        position: relative;
+        top: -95px;
+        right:1px;
+        
+        background-image:url(../img/escritorio/botonBlog.png);
+        background-size: contain;
+        background-color: transparent;
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background-repeat: no-repeat; 
+    }
+        
+    .imagenBtnBlog:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }  
+    
+    .imagenBtnContacto{
+        width: 50px;
+        height: 50px;
+        margin-left: 10%;
+        position: relative;
+        top: -96px;
+        right:1px;
+        
+        background-image:url(../img/escritorio/botonContacto.png);
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;   
+        
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+        
+    .imagenBtnContacto:hover ~ h2{
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        opacity: 1;
+    }
+    
+    .imagenContenedor h2{
+        width: 49%;
+        font-family: logo;
+        color: rgb(5, 80, 249);
+        font-size: 0.8em;
+        margin-left: 222%;
+        position: relative;
+        top: -126px;
+        left: -67%;
+        text-decoration: none;
+        
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+        opacity:0;
+    }
+    
+    /* Termina navegador */
+
+    #slogan{
+        width: 32%;
+        height: 10vh;
+        position: absolute;
+        margin-top: 202px;
+        display: none;
+    }
+
+    #slogan h1{
+        color:steelblue;
+        font-family: logo;
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+
+    #slogan p{
+        color:black;
+        font-size: 1em;
+        font-family: menu;
+        text-align: center;
+    }
+
+    #fondoNav{
+        width: 79%;
+        height: 12%;
+        margin-left: 21%;
+    }
+
+    #fondoNav img{
+        width:100%;
+        height:auto;
+        display: none;
+    }
+
+/* cambios del cuerpo desde aqui */
+#contenedor{
+    width: 99%;
+    height: 94%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.textoContenido{
+    width: 95.5%;
+    height: 71vh;
+    display: block;
+    padding: 2%;
+}
+
+.contenedorTextosIzquierda{
+    width: 99%;
+    height: 45vh;
+    border-top: 4px solid rgb(66, 129, 241);
+    display:inline-block;
+}
+
+.contenedorTextosIzquierda h1{
+    padding-top: 12px;
+    font-family: logo;
+    font-size: 1.8em;
+    color: steelblue;
+    padding-top: 18px;
+    padding-left: 6%;
+    text-align: center;
+    text-shadow: -4px 3px 8px rgb(83, 181, 252);
+}
+
+.contenedorTextosIzquierda p{
+    font-family: textos;
+    color: rgb(62, 62, 62);
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+}
+
+#infoText{
+    font-family: textos;
+    color: rgb(62, 62, 62);
+    font-size: 0.62em;
+    padding-top: 15px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+}
+
+.contenedorImagenTextLeft{
+    display: none;
+}
+
+#redes{
+    width: 97%;
+    height: 13vh;
+    margin:auto;
+    margin-top: -14vh;
+    margin-left: -2%;
+}
+
+.navegador{
+    width:100%;
+    height: 13vh;
+}
+
+.navegador ul{
+    list-style: none; 
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.navegador li{
+    display: inline-block;
+    margin-right: 13.8%;  
+    width:10%;  
+    position: relative;
+    right: -8%;
+}
+
+.navegador li:nth-child(3){
+    position: relative;
+    top: 21px;
+}
+
+.navegador li:nth-child(2){
+    position: relative;
+    top: -5px;
+}
+
+.navegador li:nth-child(4){
+    position: relative;
+    top: -6px;
+}
+
+.navegador ul li figure{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(5, 80, 249, 1);
+    margin-left: 16%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-shadow: -9px 3px 8px rgba(5, 80, 249, 0.7);
+}
+
+.navegador ul li figure:hover{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(5, 80, 249, 0.7);
+    margin-left: 17%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-shadow: -9px 3px 8px rgba(5, 80, 249, 0.7);
+}
+
+.navegador ul li:nth-child(1) figure > img{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    width: 26%;
+    height: auto;
+    position: relative;
+    right: 14px;
+    top: 11px;
+    left: 19px;
+}
+
+.navegador ul li:nth-child(2) figure > img{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    width: 50%;
+    height: auto;
+    position: relative;
+    right: 17px;
+    top: 12px;
+    left: 13px;
+}
+
+.navegador ul li:nth-child(2) figure{
+    position: relative;
+    top: 0.3vh;
+}
+
+.navegador ul li:nth-child(3) figure > img{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 17px;
+    top: 1px;
+    left: 2px;
+}
+
+.navegador ul li:nth-child(4) figure > img{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    width: 68%;
+    height: auto;
+    position: relative;
+    right: 15px;
+    top: 13px;
+    left: 8px;
+    }
+    
+    #contentTextoFinal{
+        width: 100%;
+        margin-top: 1vh;
+        text-align: center;
+        color: black;
+        font-size: 1.5em;
+        font-family: logo;
+        letter-spacing: 1px;
+        position: relative;
+        top: 12vh;
+        margin-left: 5%;
     } 
 }
 
