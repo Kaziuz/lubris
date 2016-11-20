@@ -993,7 +993,7 @@
 
     #titulo{
         width: 100%;
-        height: 10vh;
+        height: 17vh;
         background-color: orange;
     }
 
@@ -1036,7 +1036,7 @@
 
     .menuList{
         display: block;
-        height: 120px;
+        height: 20vh;
         width: 100%;
     }
     
@@ -1047,10 +1047,10 @@
     /* Inicia navegador*/
 
     .imagenContenedor{
-        width: 80px;
-        height: 80px; 
+        width: 40px;
+        height: 40px; 
         position: relative;
-        top:96px;
+        top:20vh;
         left:29%;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
@@ -1061,8 +1061,8 @@
     }
     
     .backgroundFondo{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         margin-left: 28%;
         position: relative;
         top: -108px;
@@ -1072,11 +1072,11 @@
      }
     
     #imagenBtnHome{
-        width: 80px;
-        height: 80px;
-        margin-left: 25%;
+        width: 50px;
+        height: 50px;
+        margin-left: 15%;
         position: relative;
-        top: -194px;
+        top: -158px;
         background-image:url(../img/escritorio/botonHome.png);
         background-size: contain;
         background-color: transparent;
@@ -1097,12 +1097,12 @@
     }
     
     #imagenBtninfo{
-        width: 80px;
-        height: 80px;
-        margin-left: 29%;
+        width: 50px;
+        height: 50px;
+        margin-left: 16%;
         position: relative;
-        top: -194px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        top: -160px;
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -1122,11 +1122,11 @@
     }
     
     #imagenBtnBlog{
-        width: 80px;
-        height: 80px;
-        margin-left: 29%;
+        width: 50px;
+        height: 50px;
+        margin-left: 15%;
         position: relative;
-        top: -192px;
+        top: -158px;
         background-image:url(../img/escritorio/botonBlog.png);
         background-size: contain;
         background-color: transparent;
@@ -1147,11 +1147,11 @@
     }
 
     #imagenBtnContacto{
-        width: 80px;
-        height: 80px;
-        margin-left: 29%;
+        width: 50px;
+        height: 50px;
+        margin-left: 11%;
         position: relative;
-        top: -193px;
+        top: -159px;
         background-image:url(../img/escritorio/botonContacto.png);
         background-size: contain;
         background-color: transparent;
@@ -1178,13 +1178,14 @@
     .imagenContenedor h2{
         width: 49%;
         font-family: logo;
-        color: rgb(5, 80, 249);
-        font-size: 1.5em;
+        color: white;
+        font-size: 0.9em;
         margin-left: 222%;
         position: relative;
-        top: -248px;
+        top: -193px;
         left: -78%;
         text-decoration: none;
+        letter-spacing: 1.5px;
         
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
