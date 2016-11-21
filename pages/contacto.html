@@ -59,7 +59,7 @@
                 <div id="imagenFondo">
                     <img id="techo" src="../img/escritorio/techo1.png">
                 </div>
-                <form id="formulario" action="envioMensaje.php" method="post" enctype="multipart/form-data">
+                <form action="envioMensaje.php" method="post" id="formulario" enctype="multipart/form-data">
                     
                     <article class="mensaje">
                         <label for="mensaje">Escribanos</label>
@@ -68,22 +68,23 @@
                     
                     <article class="nombre">
                         <label for="nombre"></label>
-                        <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                        <input type="text" name="nombre" placeholder="Escriba su nombre" required/>
                     </article>
                     
                     <article class="ciudad">
                         <label for="ciudad"></label>
-                        <input type="text" name="ciudad" placeholder="Escriba su ciudad" required>
+                        <input type="text" name="ciudad" placeholder="Escriba su ciudad" required/>
                     </article>
                         
                     
                     <article class="correo">
                         <label for="correo"></label>
-                        <input type="email" name="correo" placeholder="sucorreo@gmail.com" required>  
+                        <input type="email" name="correo" placeholder="sucorreo@gmail.com" required/>  
                     </article>
                         
                     <article class="botton">
-                        <button type="submit" value="enviar" name="guardar">Enviar</button>
+                        <input id="envio" type="submit" value="Enviar" name="guardar">
+                        <input type="hidden" value="john" name="edo"/>
                     </article>
                 </form>
             </div>
