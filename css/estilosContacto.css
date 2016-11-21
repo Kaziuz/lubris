@@ -375,7 +375,7 @@
         margin-top: 3vh;
     }
 
-    form .botton button{
+    form .botton input{
         color: rgb(1, 1, 1);
         background: rgba(255,255,255,0.5);
         padding: 3px 10px 5px 14px;
@@ -389,7 +389,7 @@
         border: 3px solid beige;
     }
 
-    form .botton button:hover{
+    form .botton input:hover{
         background: rgba(255,255,255,0.9);
     }
     
@@ -749,7 +749,7 @@
             margin-top: 3vh;
         }
 
-        form .botton button{
+        form .botton input{
             color: rgb(1, 1, 1);
             background: rgba(255,255,255,0.5);
             padding: 3px 10px 5px 14px;
@@ -763,7 +763,7 @@
             border: 3px solid beige;
         }
 
-        form .botton button:hover{
+        form .botton input:hover{
             background: rgba(255,255,255,0.9);
         }
 
@@ -1124,7 +1124,7 @@
             margin-top: 3vh;
         }
 
-        form .botton button{
+        form .botton input{
             color: rgb(1, 1, 1);
             background: rgba(255,255,255,0.5);
             padding: 3px 10px 5px 14px;
@@ -1138,7 +1138,7 @@
             border: 3px solid beige;
         }
 
-        form .botton button:hover{
+        form .botton input:hover{
             background: rgba(255,255,255,0.9);
         }
     
@@ -1503,7 +1503,7 @@
             margin-left:-15%;
         }
 
-        form .botton button{
+        form .botton input{
             color: rgb(1, 1, 1);
             background: rgba(255,255,255,0.5);
             padding: 3px 10px 5px 14px;
@@ -1517,7 +1517,7 @@
             font-size: 1em;
         }
 
-        form .botton button:hover{
+        form .botton input:hover{
             background: rgba(255,255,255,0.9);
         }
     
@@ -1873,32 +1873,34 @@
             font-size: 0.9em;
         }
         
-        form .botton{
+        .botton{
             width: 100%;
             height: 7vh;
             display: block;
             position: relative;
             margin-top: 3vh;
-            right: 23%;
+            right: 0%;
         }
-
-        form .botton button{
+        
+        
+        .botton input{
             color: rgb(1, 1, 1);
             background: rgba(255,255,255,0.5);
             padding: 3px 10px 5px 14px;
             text-decoration: none;
             font-family: logo;
-            margin-left: 29%;
+            margin-left: 10%;
             margin-top: 4px;
-            width: 210px;
+            width: 190px;
             box-shadow: -3px 5px 8px rgba(1, 1, 1, 0.9);
             border: 3px solid beige;
             font-size: 1em;
         }
 
-        form .botton button:hover{
+        form .botton input:hover{
             background: rgba(255,255,255,0.9);
         }
+        
     
 }
 
