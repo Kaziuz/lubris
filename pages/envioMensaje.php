@@ -6,6 +6,7 @@ if($_POST['guardar'])
 	$nombre = $_POST['nombre'];
 	$ciudad = $_POST['ciudad'];
 
+
 	if(empty($correo))
 	{
 		echo "El correo es obligatorio<br>";
@@ -16,7 +17,7 @@ if($_POST['guardar'])
 	}
 	else
 	{
-		$mail = "johnnyalexandersepulveda@gmail.com";
+		$mail = "danielarango990@gmail.com";
 		$mensaje = "$correo ha enviado un mensaje.<br>";
 		$mensaje .= "su correo es $correo y escribe desde la ciudad de $ciudad .Su mensaje es:<br>";
 		$mensaje .= $comentario;
@@ -29,12 +30,11 @@ if($_POST['guardar'])
 		if(mail($mail, $asunto, $mensaje, $cabecera))
 			{
 				echo "Su comentario ha sido enviado exitosamente<br>";
-				echo "<script> window.location='../index.html'</script>";
 			} 
 			else
 			{
 				echo " Error en el envio de su correo, intentalo mas tarde<br>";
-				echo "<script> window.location='../index.php'</script>";
+				//echo "<script> window.location='../index.php'</script>";
 			}
 	}
 }

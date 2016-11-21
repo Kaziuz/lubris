@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 function init(){
 	var enviar = $("#btn");
-	$("#myform").submit(function() {
+	$( "#myform" ).submit(function() {
 		emailjs.sendForm('default_service', 'template_OjfD0M9z', this); return false;
 	});
 }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilosContacto.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos-formulario.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="../librerias/jquery.js">
-    </script>
-    <script type="text/javascript" src="../scripts/main.js">
-    </script>
+    <script type="text/javascript" src="../librerias/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="../scripts/main.js"></script>
     <title> Información </title>
 </head>
 <body>
@@ -59,7 +59,36 @@
                 <div id="imagenFondo">
                     <img id="techo" src="../img/escritorio/techo1.png">
                 </div>
-                <form id="formulario" action="envioMensaje.php" method="post" enctype="multipart/form-data">
+
+                <form id="myform" onsubmit="" method="post">
+                    
+                    <article class="mensaje">
+                        <label for="mensaje">Escribanos</label>
+                        <textarea type="text" name="message_html" placeholder="escriba su mensaje" rows="8" cols="40" required></textarea>
+                    </article>
+                    
+                    <article class="nombre">
+                        <label for="nombre"></label>
+                        <input type="text" name="from_name" placeholder="Escriba su nombre">
+                    </article>
+                    
+                    <article class="ciudad">
+                        <label for="ciudad"></label>
+                        <input type="text" name="to_name" placeholder="Escriba su ciudad">
+                    </article>
+                        
+                    
+                    <article class="correo">
+                        <label for="correo"></label>
+                        <input type="email" name="reply_to" placeholder="sucorreo@gmail.com">  
+                    </article>
+                        
+                    <article class="botton">
+                        <button type="submit" value="enviar" name="guardar">Enviar</button>
+                    </article>
+                </form>
+                <!--
+                <form id="formulario" method="post" action="enviar.php">
                     
                     <article class="mensaje">
                         <label for="mensaje">Escribanos</label>
@@ -68,73 +97,27 @@
                     
                     <article class="nombre">
                         <label for="nombre"></label>
-                        <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                        <input type="text" name="nombre" placeholder="Escriba su nombre">
                     </article>
                     
                     <article class="ciudad">
                         <label for="ciudad"></label>
-                        <input type="text" name="ciudad" placeholder="Escriba su ciudad" required>
+                        <input type="text" name="ciudad" placeholder="Escriba su ciudad">
                     </article>
                         
                     
                     <article class="correo">
                         <label for="correo"></label>
-                        <input type="email" name="correo" placeholder="sucorreo@gmail.com" required>  
+                        <input type="email" name="correo" placeholder="sucorreo@gmail.com">  
                     </article>
                         
                     <article class="botton">
                         <button type="submit" value="enviar" name="guardar">Enviar</button>
                     </article>
                 </form>
+                -->
             </div>
         </div>        
     </div>
 </body>
-
-<script type="text/javascript">
-    $("#formulario button").click((e)=>{     
-        
-        // trim limpia los espacios
-        // validamos los datos desde el cliente   
-        var mensaje = $("#formulario textarea").val().trim();
-        
-        if(!mensaje)
-        {
-            alert("Mensaje esta vacio");
-            return;    
-        }
-        
-        var nombre = $("#formulario .nombre input").val().trim();
-        if(!nombre)
-        {
-            alert("Nombre vacio: Escriba su nombre")
-            return;
-        }
-        
-        var ciudad = $("#formulario .ciudad input").val().trim();
-        if(!ciudad)
-        {
-            alert("Ciudad vacia: Escriba su ciudad")
-            return;
-        }
-        
-        var correo = $("#formulario .correo input").val().trim();
-        
-        if(!correo)
-        {
-            alert("Correo esta vacio");
-            return;  
-        }
-        
-        // una expresión regular para saber si el dato
-        // ingresado si es un correo
-        var regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        
-        if( !correo.match(regex) )
-        {
-            alert("no es un correo valido");
-        }
-        
-    }); 
-</script>
 </html>
