@@ -20,7 +20,7 @@
 
 
 /* Dispositivos grandes (1200px y superiores)*/
-@media screen and (min-width: 1200px) and (max-width:2900px)
+@media screen and (min-width: 1200px)
 {
     @keyframes moverMenu {
         0% { margin-left: 522%; }
@@ -36,7 +36,6 @@
     #container{
         width:100%;
         height:100vh;
-        position: fixed;
     }
 
     #fondo{
@@ -45,6 +44,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(../img/escritorio/fondoContacto.jpg);
+        
     }
 
     .menu{
@@ -396,7 +396,7 @@
 }
 
 /* computadores de escritorio y portatiles */
-@media screen and (min-width: 992px) and (max-width:1200px)
+@media screen and (min-width: 992px) and (max-width:1199px)
 {
     @keyframes  moverMenu{
         0%  { margin-left: 522%; }
@@ -411,7 +411,6 @@
     #container{
         width:100%;
         height:100vh;
-        position: fixed;
     }
 
     #fondo{
@@ -419,7 +418,7 @@
         height:100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(../img/escritorio/fondoContacto.jpg);*/
+        background-image: url(../img/escritorio/fondoContacto.jpg);
     }
 
     .menu{
@@ -504,7 +503,7 @@
         margin-left: 28%;
         position: relative;
         top: -196px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -770,7 +769,7 @@
 
 }
 
-@media screen and (min-width:768px) and (max-width:992px)
+@media screen and (min-width:768px) and (max-width:991px)
  {
      @keyframes  moverMenu{
          0%  { margin-left: 522%; }
@@ -785,7 +784,6 @@
     #container{
         width:100%;
         height:100vh;
-        position: fixed;
     }
 
     #fondo{
@@ -794,8 +792,7 @@
         height:100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(../img/escritorio/fondoContacto.jpg);
-        
+        background-image: url(../img/escritorio/fondoContacto.jpg);        
     }
 
     .menu{
@@ -880,7 +877,7 @@
         margin-left: 18%;
         position: relative;
         top: -126px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -1147,7 +1144,7 @@
     
 }
 
-@media screen and (max-width: 768px)
+@media screen and (min-width:366px) and (max-width: 767px)
 {
     @keyframes  moverMenu{
         0%  { margin-left: 522%; }
@@ -1162,7 +1159,6 @@
     #container{
         width:100%;
         height:100vh;
-        position: fixed;
     }
 
     #fondo{
@@ -1257,7 +1253,7 @@
         top: -96px;
         
         background-repeat: no-repeat;
-        background-image: url(../img/escritorio/botoninformacion.png);
+        background-image: url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         -webkit-transform: rotate(-45deg);
@@ -1391,9 +1387,9 @@
             font-size: 3em;
             letter-spacing: 2px;
             color: black;
-            margin-left: 18%;
+            margin-left: 1%;
             position: relative;
-            top: 55px;
+            top: -5px;
             text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.9);
         }
         
@@ -1504,6 +1500,386 @@
             display: block;
             position: relative;
             margin-top: 3vh;
+            margin-left:-15%;
+        }
+
+        form .botton button{
+            color: rgb(1, 1, 1);
+            background: rgba(255,255,255,0.5);
+            padding: 3px 10px 5px 14px;
+            text-decoration: none;
+            font-family: logo;
+            margin-left: 29%;
+            margin-top: 4px;
+            width: 210px;
+            box-shadow: -3px 5px 8px rgba(1, 1, 1, 0.9);
+            border: 3px solid beige;
+            font-size: 1em;
+        }
+
+        form .botton button:hover{
+            background: rgba(255,255,255,0.9);
+        }
+    
+}
+
+@media screen and (max-width: 365px)
+{
+    @keyframes  moverMenu{
+        0%  { margin-left: 522%; }
+        100%{ margin-left: 222%; }
+        }
+        
+    *{
+        padding: 0px;
+        margin:0px;
+    }
+
+    #container{
+        width:100%;
+        height:100vh;
+    }
+
+    #fondo{
+        width:100%;
+        height:100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../img/escritorio/fondoContacto.jpg);
+    }
+
+    .menu{
+        width: 90%;
+        height: 15vh;
+        position:relative;
+        right: -0.8%;
+    }
+
+    .menu ol{
+        width: 100%;
+        height: 80vh;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .menuList{
+        display: inline-block;
+        height: 20vh;
+        width: 24%;
+        float: left;
+    }
+
+    .menuList a{
+        text-decoration: none;
+    }
+
+    /* inicia navegador*/
+    .imagenContenedor{
+        width: 40px;
+        height: 40px; 
+        position: relative;
+        top:50px;
+        
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        right:-6%;
+    }
+
+    .backgroundFondo{
+        width: 50px;
+        height: 50px;
+        margin-left: 13%;
+        position: relative;
+        top: -38px;
+        background-color: rgb(5, 80, 249);
+        display: inline-block;
+        box-shadow: -1px 3px 4px rgba(0, 0, 0,0.7); 
+       }
+
+    .imagenBtnHome{
+        width: 50px;
+        height: 50px;
+        margin-left: 16%;
+        position: relative;
+        top: -95px;
+        
+        background-repeat: no-repeat;
+        background-image: url(../img/escritorio/botonHome.png);
+        background-size: contain;
+        background-color: transparent;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .imagenBtnHome:hover ~ h2{
+        opacity: 1;
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        opacity: 1;
+    }
+
+    .imagenBtninfo{
+        width: 50px;
+        height: 50px;
+        margin-left: 17%;
+        position: relative;
+        top: -96px;
+        
+        background-repeat: no-repeat;
+        background-image: url(../img/escritorio/botonInformacion.png);
+        background-size: contain;
+        background-color: transparent;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .imagenBtninfo:hover ~ h2{
+        opacity: 1;
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        opacity: 1;
+    }
+        
+    .imagenBtnBlog{
+        width: 50px;
+        height: 50px;
+        margin-left: 17%;
+        position: relative;
+        top: -95px;
+        right: 1px;
+        
+        background-image: url(../img/escritorio/botonBlog.png);
+        background-size: contain;
+        background-color: transparent;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background-repeat: no-repeat;    
+    }
+
+    .imagenBtnBlog:hover ~ h2{
+        opacity: 1;
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        opacity: 1;
+    }
+        
+    .imagenBtnContacto{
+        width: 50px;
+        height: 50px;
+        margin-left: 17%;
+        position: relative;
+        top: -95px;
+        right: 1px;
+        
+        background-image: url(../img/escritorio/botonContacto.png);
+        background-size: contain;
+        background-color: transparent;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background-repeat: no-repeat;    
+    }
+
+    .imagenBtnContacto:hover ~ h2{
+        opacity: 1;
+        animation-name: moverMenu;
+        animation-duration: 0.2s;
+        opacity: 1;
+    }
+
+    .imagenContenedor h2{
+        width: 49%;
+        font-family: logo;
+        color: rgb(5, 80, 249);
+        font-size: 0.8em;
+        margin-left: 222%;
+        position: relative;
+        top: -133px;
+        left: -78%;
+        text-decoration: none;
+        
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+        opacity:0;
+    }
+    
+
+    /* termina navegador*/
+
+    /* Formulario */
+
+        #contenedorFormulario{
+            width: 90%;
+            height: 80vh;
+            margin: auto;
+            position: relative;
+            right: 2px;
+        }
+        
+        #imagenFondo{
+            width: 80%;
+            height: 26px;
+            position: relative;
+            right: -12%;
+        }
+        
+        #techo{
+            /*
+            width:100%;
+            height:auto;
+            */
+            display: none;
+        }
+        
+        form{
+            width: 80%;
+            height: 75vh;
+            margin:auto;
+        }
+
+        form .mensaje{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .mensaje label{
+            font-family: menu;
+            font-size: 2em;
+            letter-spacing: 2px;
+            color: black;
+            margin-left: 8%;
+            position: relative;
+            top: 21px;
+            text-shadow: -5px 3px 4px rgba(0, 0, 0, 0.9);
+        }
+        
+        .mensaje textarea{
+            width: 83%;
+            height: 7vh;
+            background: rgba(255, 255, 255, 0.5);
+            margin-left: 7%;
+            margin-top: 8vh;
+            position: relative;
+            font-family: textos;
+            border: 5px solid white;
+            -webkit-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            -moz-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            text-align: center;
+            font-size: .8em;
+        }
+            
+        form .nombre{
+            width: 100%;
+            height: 7vh;
+            display: block;
+            position: relative;
+            margin-top: 3vh;
+        }
+        
+        .nombre label{
+            font-family: textos;
+            color: black;
+            font-size: 1em;
+        }
+        
+        .nombre input{
+            width: 83%;
+            height: 4vh;
+            background: rgba(255, 255, 255, 0.7);
+            margin-left: 7%;
+            margin-top: 0.9vh;
+            position: relative;
+            font-family: textos;
+            border: 5px solid white;
+            -webkit-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            -moz-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            text-align: center;
+            font-family: textos;
+            color: black;
+            font-size: 0.9em;
+        }
+            
+        
+        form .ciudad{
+            width: 100%;
+            height: 7vh;
+            display: block;
+            position: relative;
+            margin-top: 3vh;
+        }
+
+        form .ciudad input{
+            width: 83%;
+            height: 4vh;
+            background: rgba(255, 255, 255, 0.7);
+            margin-left: 7%;
+            margin-top: 0.9vh;
+            position: relative;
+            font-family: textos;
+            border: 5px solid white;
+            -webkit-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            -moz-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            text-align: center;
+            font-family: textos;
+            color: black;
+            font-size: 0.9em;
+        }
+        
+        form .correo{
+            width: 100%;
+            height: 7vh;
+            display: block;
+            position: relative;
+            margin-top: 3vh;
+        }
+        
+        .correo input{
+            width: 83%;
+            height: 4vh;
+            background: rgba(255, 255, 255, 0.7);
+            margin-left: 7%;
+            margin-top: 0.9vh;
+            position: relative;
+            font-family: textos;
+            border: 5px solid white;
+            -webkit-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            -moz-box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            box-shadow: inset -3px 0 8px rgba(0,0,0,0.8);
+            text-align: center;
+            font-family: textos;
+            color: black;
+            font-size: 0.9em;
+        }
+        
+        form .botton{
+            width: 100%;
+            height: 7vh;
+            display: block;
+            position: relative;
+            margin-top: 3vh;
+            right: 23%;
         }
 
         form .botton button{
