@@ -136,7 +136,7 @@ header{
     transform: rotate(-45deg);
 }
 
-.imagenBtninfo:hover ~ h2{
+    .imagenBtninfo:hover ~ h2{
     animation-name: moverMenu;
     animation-duration: 0.2s;
     animation-iteration-count: 1;
@@ -620,7 +620,7 @@ section p{
         margin-left: 27%;
         position: relative;
         top: -195px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -994,7 +994,7 @@ section p{
 
     header{
         width: 100%;
-        height: 40vh;
+        height: 84vh;
         background-image: url(../img/escritorio/fondoHeaderBlog.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -1081,7 +1081,7 @@ section p{
         margin-left: 18%;
         position: relative;
         top: -126px;
-        background-image:url(../img/escritorio/botoninformacion.png);
+        background-image:url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         
@@ -1173,7 +1173,7 @@ section p{
         width: 80%;
         height: 26vh;
         margin-left: 17%;
-        margin-top: 32vh;
+        margin-top: 31vh;
         padding: 12px 12px;
         background-image: url(../img/escritorio/casa.png);
         background-repeat: no-repeat;
@@ -1199,7 +1199,7 @@ section p{
 
      #despliegue{
          width: 100%;
-         height: 32vh;
+         height: 37vh;
          position: relative;
          background-image: url(../img/escritorio/fondoimg2Blog.png);
          margin-top: -1px;
@@ -1208,11 +1208,12 @@ section p{
     }
 
     #contenedorlogo2{
-        width: 49%;
+        width: 36%;
         height: 30vh;
         margin: auto;
         position: relative;
-        top: 22vh;
+        top: 14vh;
+        right: -25%;
     }
 
 
@@ -1232,7 +1233,7 @@ section p{
     
     .textoContenido{
         width: 95.5%;
-        height: 26vh;
+        height: 50vh;
         display: block;
         padding: 2%;
     }
@@ -1287,7 +1288,7 @@ section p{
         width: 100%;
         height: 22vh;
         position: relative;
-        top:4vh;
+        top:0vh;
     }
     
     .navegador nav{
@@ -1538,7 +1539,7 @@ section p{
         top: -96px;
         
         background-repeat: no-repeat;
-        background-image: url(../img/escritorio/botoninformacion.png);
+        background-image: url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         -webkit-transform: rotate(-45deg);
@@ -1996,7 +1997,7 @@ section p{
         top: -96px;
         
         background-repeat: no-repeat;
-        background-image: url(../img/escritorio/botoninformacion.png);
+        background-image: url(../img/escritorio/botonInformacion.png);
         background-size: contain;
         background-color: transparent;
         -webkit-transform: rotate(-45deg);
