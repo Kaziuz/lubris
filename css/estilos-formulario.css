@@ -5,17 +5,17 @@ form.emailjs-error:after {
   transition: all .3s;
 }
 form.emailjs-sending:after {
-  content: 'Sending email...';
+  content: 'Mandando mensaje....';
   background: #eee;
 }
 form.emailjs-success:after {
-  content: 'Email sent!';
+  content: 'Mensaje enviado!';
   background: #1B5E20;
   color: white;
   text-shadow: -1px -1px black;
 }
 form.emailjs-error:after {
-  content: 'Error sending email';
+  content: 'Error al enviar el mensaje!';
   background: #B71C1C;
   color: white;
   text-shadow: -1px -1px black;
